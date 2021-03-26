@@ -58,7 +58,7 @@ RUN jupyter labextension install @ijmbarr/jupyterlab_spellchecker
 # end
 
 # Copy notebooks
-COPY ./samples/notebooks/ ${HOME}/Notebooks/
+COPY ./notebooks/ ${HOME}/notebooks/
 
 # Copy package sources
 COPY ./NuGet.config ${HOME}/nuget.config
