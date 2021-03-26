@@ -52,10 +52,10 @@ RUN dotnet_sdk_version=5.0.102 \
     # Trigger first run experience by running arbitrary cmd
     && dotnet help
 
-## extentions 
-RUN pip install JLDracula
-RUN jupyter labextension install @ijmbarr/jupyterlab_spellchecker
-# end
+# ## extentions 
+# RUN pip install JLDracula
+# RUN jupyter labextension install @ijmbarr/jupyterlab_spellchecker
+# # end
 
 # Copy notebooks
 COPY ./notebooks/ ${HOME}/notebooks/
